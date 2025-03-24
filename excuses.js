@@ -1,10 +1,31 @@
-export const excuses = [
-    "Mi perro se comió el ratón.",
-    "Estaba esperando a que mi pc encendiera correctamente.",
-    "Hubo tormenta eléctrica y se fue la luz.",
-    "Pensaba que lo había terminado.",
-    "Mi teclado no funcionaba correctamente.",
-    "Se me cayó el internet.",
-    "El universo no quería que programara hoy.",
-    "El compilador y yo tenemos nuestras diferencias."
-  ];
+export const subjects = [
+  "Mi gato",
+  "El compilador",
+  "Un dragón",
+  "Mi teclado",
+  "Mi PC"
+];
+
+export const verbs = [
+  "borró",
+  "escribió",
+  "reinició",
+  "rompió",
+  "programó"
+];
+
+export const objects = [
+  "el servidor",
+  "el proyecto final",
+  "el repositorio",
+  "el sistema de archivos",
+  "la aplicación web"
+];
+
+export const reasons = [
+  "porque se fue la luz",
+  "porque tenía hambre",
+  "porque así lo dijo el horóscopo",
+  "porque el universo se lo pidió",
+  "porque confundió los cables"
+];

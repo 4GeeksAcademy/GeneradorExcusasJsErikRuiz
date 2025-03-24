@@ -1,12 +1,21 @@
 import './styles.css'
-import { excuses } from './excuses.js'
+import { subjects, verbs, objects, reasons } from './excuses.js'
 
-function getRandomExcuse() {
-  const index = Math.floor(Math.random() * excuses.length)
-  return "Disculpa: " + excuses[index] // Concatenación de strings
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length)
+}
+
+function generateExcuse() {
+  const subject = subjects[getRandomIndex(subjects)]
+  const verb = verbs[getRandomIndex(verbs)]
+  const object = objects[getRandomIndex(objects)]
+  const reason = reasons[getRandomIndex(reasons)]
+
+ 
+  return `${subject} ${verb} ${object} ${reason}.`
 }
 
 document.getElementById('generateBtn').addEventListener('click', () => {
-  const excuseText = getRandomExcuse()
-  document.getElementById('excuse').textContent = excuseText
+  const excuse = generateExcuse()
+  document.getElementById('excuse').textContent = excuse
 })
